@@ -29,7 +29,7 @@ permissions:
 
 jobs:
   triage:
-    if: github.repository == 'BerriAI/litellm'
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout triage script

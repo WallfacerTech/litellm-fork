@@ -18,6 +18,7 @@ concurrency:
 
 jobs:
   oss-safe-checks:
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     name: Run OSS daily safe checks
     if: startsWith(github.ref_name, 'litellm_oss_daily_20') || startsWith(github.head_ref, 'litellm_oss_daily_20') || startsWith(github.base_ref, 'litellm_oss_daily_20')
     runs-on: ubuntu-latest

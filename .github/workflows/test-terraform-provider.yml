@@ -25,6 +25,7 @@ concurrency:
 
 jobs:
   provider-checks:
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     name: gofmt, vet, build, test
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -60,6 +61,7 @@ jobs:
         run: go test -timeout 120s ./...
 
   endpoint-drift:
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     name: Provider endpoints vs proxy OpenAPI schema
     runs-on: ubuntu-latest
     timeout-minutes: 20

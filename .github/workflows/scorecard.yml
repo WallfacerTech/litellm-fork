@@ -11,6 +11,7 @@ permissions: read-all
 
 jobs:
   analysis:
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     name: Scorecard analysis
     runs-on: ubuntu-latest
     if: github.event.repository.default_branch == github.ref_name

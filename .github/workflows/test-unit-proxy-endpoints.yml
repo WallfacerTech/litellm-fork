@@ -18,6 +18,7 @@ concurrency:
 
 jobs:
   proxy-endpoints:
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     permissions:
       contents: read
       id-token: write
@@ -56,6 +57,7 @@ jobs:
   # is independent and its coverage artifact is uploaded separately.
   # See: https://www.notion.so/36c43b8acdab81ee845fd5365128a2fc
   proxy-server:
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     permissions:
       contents: read
       id-token: write

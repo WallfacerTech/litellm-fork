@@ -7,6 +7,7 @@ on:
 
 jobs:
   add-component-label:
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     runs-on: ubuntu-latest
     permissions:
       issues: write

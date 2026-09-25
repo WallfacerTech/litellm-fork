@@ -32,7 +32,7 @@ permissions:
 
 jobs:
   reconsider:
-    if: |
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
       github.repository == 'BerriAI/litellm'
       && contains(github.event.comment.body, '@agent-shin reconsider')
     runs-on: ubuntu-latest

@@ -14,6 +14,7 @@ permissions: {}
 
 jobs:
   zizmor:
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     name: zizmor
     runs-on: ubuntu-latest
     timeout-minutes: 5

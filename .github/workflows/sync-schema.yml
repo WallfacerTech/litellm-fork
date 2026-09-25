@@ -13,6 +13,7 @@ permissions:
 
 jobs:
   sync:
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     name: Copy root schema to proxy and proxy-extras
     runs-on: ubuntu-latest
     timeout-minutes: 5

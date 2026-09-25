@@ -24,6 +24,7 @@ concurrency:
 
 jobs:
   image-scan:
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     name: image-scan
     runs-on: ubuntu-latest
     if: >-

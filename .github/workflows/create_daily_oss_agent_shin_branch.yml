@@ -7,7 +7,7 @@ on:
 
 jobs:
   create-oss-agent-shin-branch:
-    if: github.repository == 'BerriAI/litellm'
+    if: false  # WallfacerTech fork: disable upstream CI burn (COD-ACTIONS-IMPL-0925)
     runs-on: ubuntu-latest
     permissions:
       contents: write
